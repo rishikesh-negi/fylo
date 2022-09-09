@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply text-3xl font-bold lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+}
+
+@layer utilities {
+  .f-col {
+    @apply flex flex-col items-center;
+  }
+
+  .f-row {
+    @apply flex flex-row items-center gap-y-0;
+  }
+}
+
+.section-container {
+  @apply container mx-auto;
+}
+
+.testimonial-box {
+  @apply max-w-md f-col gap-y-8 p-8 bg-gray-100 dark:bg-darkBlue3 rounded-xl hover:-translate-y-1 hover:shadow-lg lg:p-12 transition-all duration-200;
+}
+
+.testimonial-auth-img {
+  @apply w-12 h-12 rounded-full border-4 border-accentCyan box-content;
+}
+
+.testimonial-auth-det {
+  @apply flex flex-col items-start gap-y-1;
+}
